@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monkey Jungle Adventure</title>
+<style>
+body{margin:0;overflow:hidden;background:linear-gradient(#66c8ff,#b8ecff);font-family:Arial}
+.title{text-align:center;font-size:48px;padding:20px;color:#1f5d18}
+.ground{position:fixed;bottom:0;height:160px;width:100%;background:#3fa34d}
+.vine{position:absolute;left:50%;top:0;width:6px;height:220px;background:#4b7d2b;transform-origin:top;animation:swing 2s ease-in-out infinite alternate}
+.monkey{position:absolute;left:-30px;bottom:-10px;font-size:72px}
+.banana{position:absolute;font-size:48px;animation:float 3s ease-in-out infinite}
+.b1{left:20%;top:220px}.b2{left:70%;top:170px}.b3{left:55%;top:300px}
+@keyframes swing{from{transform:rotate(-18deg)}to{transform:rotate(18deg)}}
+@keyframes float{50%{transform:translateY(-20px)}}
+</style>
+</head>
+<body>
+<div class="title">🐵 Monkey Jungle Adventure</div>
+<div class="vine"><div class="monkey">🐵</div></div>
+<div class="banana b1">🍌</div>
+<div class="banana b2">🍌</div>
+<div class="banana b3">🍌</div>
+<div class="ground"></div>
+</body>
+</html>
